@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    >
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monofett"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="72sp"
+        android:layout_marginTop="50sp"
+        />
+
+    <EditText
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="150sp"
+        android:layout_marginHorizontal="60sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="@string/city_name_placeholder"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/city_name"
+        android:layout_marginTop="30sp"
+        android:layout_marginHorizontal="30sp"
+        android:text="@string/start_button" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go_button"
+        android:layout_marginTop="50sp"
+         />
+</RelativeLayout>
